@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button id="showFormButton" class="show-Form" type="submit">
+      Show Form
+    </button>
+    <!-- <header><h1>Job Application Form</h1></header> -->
+    <div class="form-body-container" id="form-body-container">
+      <section>
+        <form id="form">
+          <label for="fullName"
+            >Full Name
+            <input type="text" placeholder="First Name" id="fullName"
+          /></label>
+          <span id="fullNameError" class="error"></span>
+          <label for="email"
+            >Email <input type="text" placeholder="example@mail.com" id="email"
+          /></label>
+          <span id="emailError" class="error"></span>
+          <label for="number"
+            >Phone Number
+            <input type="text" placeholder="Enter Phone Number" id="number"
+          /></label>
+          <span id="phoneNumberError" class="error"></span>
+          <input class="add-btn" type="submit" name="submit" id="submit" />
+        </form>
+      </section>
+      <section>
+        <table style="width: 100%" id="myTable" class="myTable">
+          <tr>
+            <th>fullName</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+          </tr>
+          <!-- <tbody>
+    <td>Abhisha Sharma</td>
+    <td>abhishasharma004@gmail.com</td>
+    <td>9866843459</td>
+    <td class="edit-delete-btn">
+        <a href="" class="btn-edit" type="btn-warning">Edit</a>
+        <a href="" class=" btn-delete" type="btn-danger">Delete</a>
+
+    </td> -->
+          <!-- </tbody> -->
+        </table>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
